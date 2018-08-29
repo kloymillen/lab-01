@@ -52,7 +52,7 @@ We will show you how to use the commands listed above in the lab instructions.
 
 For this assignment, you must have a GitHub account linked to your university email.
 
-If you have never had a GitHub account, you can create one by visiting the [GitHub](https://github.com/) website and filling up the form to sign up for GitHub. Make sure to use your university email when creating the account.
+If you have never had a GitHub account, you can create one by visiting the [GitHub](https://github.com/) website and filling up the form to sign up for GitHub. Make sure to use your university email when creating the account. Make sure you verify your email (you will get a verification email after creating your account).
 
 If you already have a GitHub account, but it was created using a different email, you need to link your GitHub account to your university email. Log into your account on the GitHub website and then visit the [Email settings](https://github.com/settings/emails) page to add your university email. Once you add your university email, you will receive an email which will allow you to verify that the email belongs to you.
 
