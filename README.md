@@ -295,3 +295,5 @@ This is the end of the lab :) Please call your instructor or lab assistant to ma
 I suggest that you read the following websites to understand and learn more about Git, since you will be heavily using Git and GitHub throughout the labs and projects in this class.
 
 - https://guides.github.com/introduction/git-handbook/ (10-minute read)
+- https://www.cprogramming.com/g++.html (5-minute read)
+- https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners (basic commands, 10-minute read)
