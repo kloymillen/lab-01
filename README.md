@@ -69,7 +69,7 @@ After opening that link, GitHub will generate the your own repository that will 
 Open the link to see the web-view of your GitHub repository. In there you will see two files:
 
 1. `README.md`: an exact copy of the file you are reading right now.
-1. `helloworld.cc`: the starter code for your lab assignment.
+1. `helloworld.cpp`: the starter code for your lab assignment.
 
 Now we need to clone your repository into your local computer so that you can start working with that code. To keep your files organized, we will first create a folder for this class, and in that folder we will clone your repository.
 
@@ -134,21 +134,21 @@ Let's access that folder and look at the contents:
 ```
 ~/cpsc120$ cd lab-01-your_user_name
 ~/cpsc120/lab-01-your_user_name$ ls
-README.md helloworld.cc
+README.md helloworld.cpp
 ```
 
 As you can see, a copy of the two files that you saw on the web-view of your GitHub repository have been downloaded (cloned) into your computer. You have successfully cloned your lab assignment's git repository.
 
 ### Compiling and executing code
 
-The file `helloworld.cc` contains source code for the HelloWorld program, written in C++. HelloWorld is a program that prints "Hello World!" in the terminal whenever it is executed. As you will learn later in the class, source code must first be compiled so that it can be executed in the computer. Let's go ahead and compile the source code.
+The file `helloworld.cpp` contains source code for the HelloWorld program, written in C++. HelloWorld is a program that prints "Hello World!" in the terminal whenever it is executed. As you will learn later in the class, source code must first be compiled so that it can be executed in the computer. Let's go ahead and compile the source code.
 
 #### Compiling source code
 
-Tuffix comes with the `g++` compiler installed. Let's take a quick look at the contents of that file using the `cat` command, which prints the contents of the file in the terminal. Run the command `cat helloworld.cc`:
+Tuffix comes with the `g++` compiler installed. Let's take a quick look at the contents of that file using the `cat` command, which prints the contents of the file in the terminal. Run the command `cat helloworld.cpp`:
 
 ```
-~/cpsc120/lab-01-your_user_name$ cat helloworld.cc
+~/cpsc120/lab-01-your_user_name$ cat helloworld.cpp
 // HelloWorld program
 #include <iostream>
 
@@ -158,16 +158,16 @@ int main()
 }
 ```
 
-To compile the `helloworld.cc` source code, run the following command:
+To compile the `helloworld.cpp` source code, run the following command:
 
 ```
-~/cpsc120/lab-01-your_user_name$ g++ helloworld.cc
+~/cpsc120/lab-01-your_user_name$ g++ helloworld.cpp
 ```
 
 Now you will see that a new file `a.out` has been created:
 ```
 ~/cpsc120/lab-01-your_user_name$ ls
-a.out helloworld.cc README.md
+a.out helloworld.cpp README.md
 ```
 
 This file is the compiled version of the source code, which we call a binary file (you will learn more about this later). This file is also an executable file, which means that we can run/execute it. Let's go ahead and execute the code.
@@ -185,15 +185,15 @@ Now you have successfully compiled and executed C++ code!
 
 ### Editing code
 
-As you saw when running `cat helloworld.cc`, source code is just a plain text file, which means that you could use a text editor to edit the contents of the file. However, because we have to make sure the contents are plain text (no bold, underline, italics, etc), it is safer to use a code editor rather than a text editor (such as Microsoft Word or WordPad). There are many types of code editors, some are very basic and straight forward, while other comes with advance features such as code coloring, code suggestions, auto-formatters, etc. For this class, we will be using [Atom](https://atom.io/), an open-source text editor. Atom is already installed in Tuffix, however you cannot run Atom when accessing a computer through SSH. If you are planning on doing so, please let me know so that I can help you with alternate options for code editing.
+As you saw when running `cat helloworld.cpp`, source code is just a plain text file, which means that you could use a text editor to edit the contents of the file. However, because we have to make sure the contents are plain text (no bold, underline, italics, etc), it is safer to use a code editor rather than a text editor (such as Microsoft Word or WordPad). There are many types of code editors, some are very basic and straight forward, while other comes with advance features such as code coloring, code suggestions, auto-formatters, etc. For this class, we will be using [Atom](https://atom.io/), an open-source text editor. Atom is already installed in Tuffix, however you cannot run Atom when accessing a computer through SSH. If you are planning on doing so, please let me know so that I can help you with alternate options for code editing.
 
-You can open Atom by simply running `atom` in the terminal. However, you will need to find the file you want to edit when opening the program. If you want to open directly the program with the file you want to edit, you can pass the name of the file as the first argument of the `atom` command. In our case, it will be `helloworld.cc`:
+You can open Atom by simply running `atom` in the terminal. However, you will need to find the file you want to edit when opening the program. If you want to open directly the program with the file you want to edit, you can pass the name of the file as the first argument of the `atom` command. In our case, it will be `helloworld.cpp`:
 
 ```
-~/cpsc120/lab-01-your_user_name$ atom helloworld.cc
+~/cpsc120/lab-01-your_user_name$ atom helloworld.cpp
 ```
 
-Now that Atom is open, go ahead and edit the `helloworld.cc` to replace "world" with your name, so that when you run it, it will print out "Hello Luis!" (instead of *Luis*, it will be your name).
+Now that Atom is open, go ahead and edit the `helloworld.cpp` to replace "world" with your name, so that when you run it, it will print out "Hello Luis!" (instead of *Luis*, it will be your name).
 
 Once you make the edit, save the file and verify that it works correctly by compiling the code again and running it.
 
@@ -206,7 +206,7 @@ To submit your code, you will need to add the files that you want to submit, com
 From the time you cloned the repository to now, there are two changes to the folder:
 
 1. A new file `a.out` exists
-1. The `helloworld.cc` file was modified.
+1. The `helloworld.cpp` file was modified.
 
 You can verify this by running `git status`, which should display the following:
 
@@ -219,7 +219,7 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   helloworld.cc
+	modified:   helloworld.cpp
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -229,17 +229,17 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-That information is telling two things: there is a modification to the `helloworld.cc` file and there is a new (untracked) file `a.out` that didn't exist before when you cloned the repository.
+That information is telling two things: there is a modification to the `helloworld.cpp` file and there is a new (untracked) file `a.out` that didn't exist before when you cloned the repository.
 
-When submitting lab assignments or your project in this class, you will never be asked to submit the compiled code (in this case, the file `a.out`). We will take care of compiling it for you and running it for you when grading your assignment. That means that you just need to submit the `helloworld.cc` file.
+When submitting lab assignments or your project in this class, you will never be asked to submit the compiled code (in this case, the file `a.out`). We will take care of compiling it for you and running it for you when grading your assignment. That means that you just need to submit the `helloworld.cpp` file.
 
-In Git, you can only submit *commits*. A commit can be composed of multiple actions such as modifying a file, adding a new file, deleting a file. In this case, we just want to commit the modification you made to `helloworld.cc`, so we first need to add `helloworld.cc` to the commit by running the following command:
+In Git, you can only submit *commits*. A commit can be composed of multiple actions such as modifying a file, adding a new file, deleting a file. In this case, we just want to commit the modification you made to `helloworld.cpp`, so we first need to add `helloworld.cpp` to the commit by running the following command:
 
 ```
-~/cpsc120/lab-01-your_user_name$ git add helloworld.cc
+~/cpsc120/lab-01-your_user_name$ git add helloworld.cpp
 ```
 
-Now when you run `git status`, you will notice that the `modified: helloworld.cc` line is under *Changes to be committed* rather than *Changes not staged for commit*.
+Now when you run `git status`, you will notice that the `modified: helloworld.cpp` line is under *Changes to be committed* rather than *Changes not staged for commit*.
 
 #### Committing your changes
 
