@@ -292,7 +292,7 @@ This is the end of the lab :) Please call your instructor or lab assistant to ma
 
 ## Additional readings
 
-I suggest that you read the following websites to understand and learn more about Git, since you will be heavily using Git and GitHub throughout the labs and projects in this class.
+I suggest that you read the following websites to understand and learn more about Git and g++, since you will be heavily using them throughout the labs and projects in this class.
 
 - https://guides.github.com/introduction/git-handbook/ (10-minute read)
 - https://www.cprogramming.com/g++.html (5-minute read)
