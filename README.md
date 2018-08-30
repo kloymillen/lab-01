@@ -30,6 +30,8 @@ your_user_name@mylaptop:~$
 
 The UNIX shell is a program that expects the user (you) to input commands (using a keyboard in most cases) and then sends your commands to the operating system to be executed on your behalf. There are multiple types of UNIX shells which determine the format/style of commands it expects. In this class, we will be using the *Bash* UNIX shell.
 
+*Note: you might notice that whenever you type your password in the shell, nothing will show up. This is working as intended (security feature). The terminal does let you type your password whenever it is asked, but it does not show any hidden characters as you type it.*
+
 ### Git, GitHub & GitHub Classroom
 
 When writing code for a program, it is extremely helpful to keep track of the changes that you have made to your code. Sometimes you realize that a piece of code you recently wrote is actually broken and you need to revert it to an older version. A software that allows you to keep track of your code changes is called a version control system.
